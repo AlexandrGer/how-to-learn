@@ -10,6 +10,32 @@
 	color: #000;
 }
 
+.page__description {
+	margin-top: 100px;
+}
+
+.page__techniques {
+	margin: 100px auto 0;
+}
+
+.page__digits {
+	margin: 100px 0;
+}
+
+.page__resources {
+	margin: 100px 0 217px 0;
+}
+
+.link {
+	opacity: 1;
+	transition: opasity 2s linear;
+}
+
+.link:hover {
+	opacity: .55;
+}
+
+
 /* HEADER========================================================== */
 
 .header {
@@ -21,6 +47,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
+	overflow: hidden;
 }
 
 .logo {
@@ -84,7 +111,6 @@
 /* SECTION DESCRIPTION===================================================== */
 
 .description {
-	margin-top: 100px;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -94,7 +120,7 @@
 	display: flex;
 	justify-content: space-between;
 	width: 80%;
-	min-height: 338.4px;
+	/* min-height: 338.4px; */
 }
 
 .two-columns__brief {
@@ -129,10 +155,132 @@
 	font-weight: 600;
 }
 
+/* SECTION TECHNIQUES===================================================== */
+
+.techniques__cards {
+	margin: 0 100px 60px 0;
+}
+
+.techniques__cards:nth-child(3n) {
+	margin: 0;
+}
+
+.techniques {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cards {
+	width: 920px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cards__item {
+	width: 240px;
+	text-align: center;
+}
+
+.cards__image {
+	margin: 60px 40px 43px;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+}
+
+.cards__title {
+	margin: 0;
+	line-height: 1.15;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.cards__description {
+	margin: 0;
+	margin-top: 16px;
+	line-height: 23px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+/* SECTION VIDEO========================================================== */
+
+.video {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.video__iframes {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px auto 0;
+}
+
+.video__iframe {
+	width: 515px;
+	height: 316px;
+}
+
+/* SECTION OAKLEY========================================================= */
+
+.oakley {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding-top: 160px;
+	background-color: #f2f2f2;
+}
+
+/* SECTION FEYNMAN======================================================== */
+
+.feynman {
+	min-height: 890px;
+	background-color: #f2f2f2;
+	background-image: url(../images/feynman.png);
+	background-size: 867px 637px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+}
+
+.feynman__title {
+	line-height: 1.15;
+	font-size: 120px;
+	font-weight: 600;
+	width: 648px;
+	text-align: center;
+	margin: 100px auto 70px;
+}
+
+.feynman__subtitle {
+	margin: 0;
+	line-height: 51px;
+	font-size: 36px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.feynman__link {
+	margin: 0;
+	line-height: 51px;
+	font-size: 36px;
+	font-weight: normal;
+	color: #2f80ed;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	right: 48px;
+}
+
 /* SECTION DIGITS========================================================= */
 
 .digits {
-	margin: 100px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -189,47 +337,79 @@
 	font-weight: normal;
 }
 
-/* SECTION FEYNMAN======================================================== */
+/* SECTION KHAN=========================================================== */
 
-.feynman {
-	min-height: 890px;
+.khan {
 	background-color: #f2f2f2;
-	background-image: url(../images/feynman.png);
-	background-repeat: no-repeat;
-	background-position: left bottom;
+	padding-top: 100px;
+}
+
+.khan__container {
+	width: 80%;
+	margin: 0 auto;
 	display: flex;
-	position: relative;
 	flex-direction: column;
-	align-items: center;
 }
 
-.feynman__title {
-	line-height: 1.15;
-	font-size: 120px;
-	font-weight: 600;
-	width: 648px;
-	text-align: center;
-	margin: 100px auto 70px;
-}
-
-.feynman__subtitle {
+.khan__author {
 	margin: 0;
-	line-height: 51px;
-	font-size: 36px;
+	line-height: 42px;
+	font-size: 30px;
 	font-weight: normal;
-	text-align: center;
 }
 
-.feynman__link {
+.khan__title {
 	margin: 0;
-	line-height: 51px;
-	font-size: 36px;
+	margin-bottom: 50px;
+	line-height: 1.15;
+	font-size: 60px;
+	font-weight: 600;
+}
+
+.khan__quote {
+	margin: 0;
+	margin-bottom: 36px;
+	line-height: 34px;
+	font-size: 24px;
+	font-weight: normal;
+	width: 790px;
+}
+
+.khan__quote-author {
+	margin: 0;
+	margin-bottom: 10px;
+	line-height: 1.15;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.khan__quote-author-subline {
+	margin: 0;
+	margin-bottom: 68px;
+	line-height: 1.15;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.khan__book-container {
+	display: flex;
+}
+
+.khan__book-pic {
+	width: 620px;
+	height: 608px;
+	object-position: top left;
+	object-fit: cover;
+	margin-right: 48px;
+}
+
+.khan__buy-link {
+	margin: 0;
+	line-height: 42px;
+	font-size: 30px;
 	font-weight: normal;
 	color: #2f80ed;
 	text-decoration: none;
-	position: absolute;
-	top: 50%;
-	right: 48px;
 }
 
 /* SECTION KAUFMAN======================================================== */
@@ -241,7 +421,6 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-
 }
 
 .section-title_theme_dark {
@@ -274,7 +453,29 @@
 	height: 877px;
 }
 
-/* FOOTER ========================================================*/
+/* SECTION RESOURCES====================================================== */
+
+.resources {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.resources__logo-zone {
+	margin: 80px auto 0;
+	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.resources__link {
+	width: 270px;
+	height: 38px;
+}
+
+/* FOOTER ================================================================*/
 
 .footer {
 	min-height: 350px;
