@@ -7,12 +7,10 @@
 @import url(./page/__techniques/page__techniques.css);
 @import url(./page/__video/page__video.css);
 @import url(./page/__oakley/page__oakley.css);
-@import url(./page/__feynman/page__feynman.css);
 @import url(./page/__digits/page__digits.css);
 @import url(./page/__khan/page__khan.css);
 @import url(./page/__kaufman/page__kaufman.css);
 @import url(./page/__resources/page__resources.css);
-@import url(./page/__footer/page__footer.css);
 
 @import url(./link/link.css);
 
@@ -26,7 +24,6 @@
 @import url(./header/__link/header__link.css);
 @import url(./header/__main-illusrtration/header__main-illustration.css);
 @import url(./header/__square-pic/header__square-pic.css);
-@import url(./header/__rotation/header__rotation.css);
 
 @import url(./description/description.css);
 
@@ -37,7 +34,6 @@
 @import url(./two-columns/__span-accent/two-columns__span-accent.css);
 
 @import url(./techniques/techniques.css);
-@import url(./techniques/__cards/techniques__cards.css);
 
 @import url(./cards/cards.css);
 @import url(./cards/__item/cards__item.css);
@@ -83,7 +79,6 @@
 
 @import url(./kaufman/kaufman.css);
 @import url(./kaufman/__triangle/kaufman__triangle.css);
-@import url(./kaufman/__rotation/kaufman__rotation.css);
 
 @import url(./resources/resources.css);
 @import url(./resources/__logo-zone/resources__logo-zone.css);

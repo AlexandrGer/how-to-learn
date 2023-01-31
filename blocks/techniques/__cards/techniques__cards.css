@@ -1,7 +1,0 @@
-.techniques__cards {
-	margin: 0 100px 60px 0;
-}
-
-.techniques__cards:nth-child(3n) {
-	margin: 0;
-}
